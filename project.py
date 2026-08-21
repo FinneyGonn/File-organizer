@@ -1,0 +1,52 @@
+import os 
+from pathlib import Path   
+
+categoria = {
+        ".jpg": "Imagenes",
+        ".png": "Imagenes",
+        ".jpeg": "Imagenes",
+        ".webp": "Imagenes",
+        ".psd": "Imagenes",
+        ".mp3": "Audio",
+        ".mp4": "Audio",
+        ".wav": "Audio",
+        ".zip": "Compreso",
+        ".exe": "Ejecutable",
+        ".pdf": "Documento",
+        ".docx": "Documento",
+        ".csv": "Documento",
+        ".rar": "Compreso",
+        ".iso": "Iso's",
+        ".txt": "Documento",
+        ".odt": "Documento",
+        ".pptx": "Documento",
+        ".msi": "Basura"
+}
+
+carpet = Path(r"C:\Users\just4\Downloads")
+print (Path.exists(carpet))
+
+Name = carpet.iterdir()
+
+for Name in carpet.iterdir():
+    print(Name.name, Name.is_file(), Name.suffix)
+     
+
+    if Name.is_file() == False:
+        print("Esto no es un archivo")
+        continue
+print(categoria[Name.suffix])
+
+destino = categoria[Name.suffix]
+final = carpet / destino 
+destino = final.mkdir(exist_ok=True)
+carpet.rename(final)
+
+print("Archivos organizados correctamente")
+  
+    
+
+
+
+
+
