@@ -23,7 +23,7 @@ categoria = {
         ".msi": "Basura"
 }
 
-carpet = Path(r"C:\Users\just4\Downloads")
+carpet = Path.home() / "Downloads"
 print (Path.exists(carpet))
 
 Name = carpet.iterdir()
