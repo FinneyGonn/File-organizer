@@ -20,6 +20,7 @@ categoria = {
         ".txt": "Documento",
         ".odt": "Documento",
         ".pptx": "Documento",
+        ".url": "Documento",
         ".msi": "Basura",
         ".py": "Codigo",
         ".js": "Codigo",
@@ -44,12 +45,11 @@ for Name in carpet.iterdir():
     print(Name.name, Name.is_file(), Name.suffix)
 
 
-    if Name.is_file() == False:
-        print("Esto no es un archivo")
+    if Name.is_file() == False or not Name.suffix in categoria:
+        print("Esto no es un archivo o el archivo no se encontro")
         continue
-        print(categoria[Name.suffix])
     else:
-
+        print(categoria[Name.suffix])
         destino = categoria[Name.suffix]
         final = carpet / destino 
         destino = final.mkdir(exist_ok=True)
