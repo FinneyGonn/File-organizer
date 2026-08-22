@@ -51,12 +51,12 @@ for numero, Name in enumerate(carpet.iterdir(), start=1,):
         continue
     else:
         print(categoria[Name.suffix])
-        #destino = categoria[Name.suffix]
-        #final = carpet / destino 
-        #destino = final.mkdir(exist_ok=True)
-       # Name.rename(final / Name.name)
+        destino = categoria[Name.suffix]
+        final = carpet / destino 
+        destino = final.mkdir(exist_ok=True)
+        Name.rename(final / Name.name)
 
-#print("Archivos organizados correctamente")
+print("Archivos organizados correctamente")
   
     
 
