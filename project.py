@@ -42,6 +42,7 @@ Name = carpet.iterdir()
 
 for Name in carpet.iterdir():
     print(Name.name, Name.is_file(), Name.suffix)
+
      
 
     if Name.is_file() == False:
@@ -49,10 +50,10 @@ for Name in carpet.iterdir():
         continue
         print(categoria[Name.suffix])
 
-destino = categoria[Name.suffix]
-final = carpet / destino 
-destino = final.mkdir(exist_ok=True)
-carpet.rename(final / Name.name)
+        destino = categoria[Name.suffix]
+        final = carpet / destino 
+        destino = final.mkdir(exist_ok=True)
+        Name.rename(final / Name.name)
 
 print("Archivos organizados correctamente")
   
