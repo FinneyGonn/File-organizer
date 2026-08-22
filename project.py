@@ -20,7 +20,19 @@ categoria = {
         ".txt": "Documento",
         ".odt": "Documento",
         ".pptx": "Documento",
-        ".msi": "Basura"
+        ".msi": "Basura",
+        ".py": "Codigo"
+        ".js"
+        ".html"
+        ".css"
+        ".cs"
+        ".ts"
+        ".php"
+        ".c"
+        ".cpp"
+        ".java"
+        ".kt"
+        ".go"
 }
 
 carpet = Path.home() / "Downloads"
@@ -35,12 +47,12 @@ for Name in carpet.iterdir():
     if Name.is_file() == False:
         print("Esto no es un archivo")
         continue
-print(categoria[Name.suffix])
+        print(categoria[Name.suffix])
 
 destino = categoria[Name.suffix]
 final = carpet / destino 
 destino = final.mkdir(exist_ok=True)
-carpet.rename(final)
+carpet.rename(final / Name.name)
 
 print("Archivos organizados correctamente")
   
