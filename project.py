@@ -43,12 +43,12 @@ Name = carpet.iterdir()
 for Name in carpet.iterdir():
     print(Name.name, Name.is_file(), Name.suffix)
 
-     
 
     if Name.is_file() == False:
         print("Esto no es un archivo")
         continue
         print(categoria[Name.suffix])
+    else:
 
         destino = categoria[Name.suffix]
         final = carpet / destino 
