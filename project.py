@@ -21,18 +21,18 @@ categoria = {
         ".odt": "Documento",
         ".pptx": "Documento",
         ".msi": "Basura",
-        ".py": "Codigo"
-        ".js"
-        ".html"
-        ".css"
-        ".cs"
-        ".ts"
-        ".php"
-        ".c"
-        ".cpp"
-        ".java"
-        ".kt"
-        ".go"
+        ".py": "Codigo",
+        ".js": "Codigo",
+        ".html": "Codigo",
+        ".css": "Codigo",
+        ".cs": "Codigo",
+        ".ts": "Codigo",
+        ".php": "Codigo",
+        ".c": "Codigo",
+        ".cpp": "Codigo",
+        ".java": "Codigo",
+        ".kt": "Codigo",
+        ".go": "Codigo"
 }
 
 carpet = Path.home() / "Downloads"
