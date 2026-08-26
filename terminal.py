@@ -16,7 +16,9 @@ print("""
 ║                                          ║
 ╚══════════════════════════════════════════╝
 """)
-opc = int(input("Que quieres hacer? 1. Organizar archivos (carpeta descarga) 2. Salir"))
+opc = int(input("Que quieres hacer?:" \
+"  1. Organizar archivos (carpeta descarga)" \
+"  2. Salir"))
 
 if opc == 1:
     project.run()
