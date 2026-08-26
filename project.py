@@ -53,14 +53,14 @@ def run():
                 print("Esto no es un archivo o el archivo no se encontro")
                 continue
         
-        else:
-            print(categoria[Name.suffix])
-            destino = categoria[Name.suffix]
-            final = carpet / destino 
-            destino = final.mkdir(exist_ok=True)
-            Name.rename(final / Name.name)
+            else:
+                    print(categoria[Name.suffix])
+                    destino = categoria[Name.suffix]
+                    final = carpet / destino 
+                    destino = final.mkdir(exist_ok=True)
+                    Name.rename(final / Name.name)
 
-        print("Archivos organizados correctamente")
+            print("Archivos organizados correctamente")
   
     
 
