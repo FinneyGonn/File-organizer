@@ -13,14 +13,17 @@ print("""
 ║      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝            ║
 ║                                          ║
 ║            F I L E   O R G A N I Z E R   ║
-║                                          ║
+║          By Miller.                      ║
 ╚══════════════════════════════════════════╝
 """)
-opc = int(input("Que quieres hacer?:" \
-"  1. Organizar archivos (carpeta descarga)" \
-"  2. Salir"))
+opc = print("Que quieres hacer?"
+        "[1] Oranizar archivos"
+        "[2] Salir")
 
-if opc == 1:
+opc2 = int(input("Selecciona tu respuesta:"
+">>> "))
+
+if opc2 == 1:
     project.run()
 else:
     print("Saliendo...")
