@@ -16,15 +16,17 @@ print("""
 ║          By Miller.                      ║
 ╚══════════════════════════════════════════╝
 """)
-opc = print("Que quieres hacer?"
-        "[1] Oranizar archivos"
-        "[2] Salir")
+opc = print("Que quieres hacer? \n [1] Organizar archivos (carpeta descargas) \n [2] Salir")
 
 opc2 = int(input("Selecciona tu respuesta:"
 ">>> "))
 
+    
+
+ 
+
 if opc2 == 1:
-    project.run()
+        project.run()
 else:
     print("Saliendo...")
     time.sleep(2.0)
